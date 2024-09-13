@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Time 2.0</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div id="app">
+            <div id="timer-container">
+                <section id="timer">
+                    <span 
+                        data-action="setMinutes"
+                        id="minutes">00</span>
+                    <span>:</span>
+                    <span 
+                        data-action="setSeconds"
+                        id="seconds">00</span>
+                </section>
+
+                <section id="controls">
+                    <button
+                        data-action="toggleRunning"
+                        class="ph ph-play-circle">
+                        <span class="sr-only">Iniciar Contador</span>
+                    </button>
+
+                    <button
+                        data-action="toggleRunning"
+                        class="ph ph-pause-circle">
+                        <span class="sr-only">Pausar Contador</span>
+                    </button>
+
+                    <button
+                        data-action="reset"
+                        class="ph ph-stop-circle">
+                        <span class="sr-only">Parar Contador</span>
+                    </button>
+
+                    <button
+                        id="increase-counter"
+                        data-action="up"
+                        class="ph ph-plus-circle">
+                        <span class="sr-only">Aumentar contador</span>
+                    </button>
+
+                    <button
+                        id="decrease-counter"
+                        data-action="down"
+                        class="ph ph-minus-circle">
+                        <span class="sr-only">Diminuir contador</span>
+                    </button>
+                </section>
+            </div>
+
+            <div id="climate">
+                <button
+                    data-action="forest"    
+                    id="button-forest">
+                    <span 
+                        id="iforest"
+                        data-action="forest" class="material-symbols-outlined">
+                        nature
+                        </span>
+                </button>
+                <button
+                    data-action="rain"    
+                    id="button-rain">
+                    <span 
+                        id="irain"
+                        data-action="rain"
+                        class="material-symbols-outlined">
+                        weather_snowy
+                        </span>
+                </button>
+                <button
+                    data-action="cafeteria"    
+                    id="button-cafeteria">
+                    <span 
+                        id="icafeteria"
+                        data-action="cafeteria"
+                        class="material-symbols-outlined">
+                        storefront
+                        </span>
+                </button>
+                <button
+                    data-action="fireplace"    
+                    id="button-fireplace">
+                    <span 
+                        id="ifireplace"
+                        data-action="fireplace"
+                        class="material-symbols-outlined">
+                            local_fire_department
+                        </span>
+                </button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

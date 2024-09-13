@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.sr-only {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0;
+    border: none;
+    appearance: none;
+}
+
+
+:root {
+    --white-color-base: #fff;
+    --primary-color: #323238;
+    --bg-button: #E1E1E6;
+    --bg-button-accent: #02799D;
+
+    font-size: 62.5%;
+    font-family: "Roboto", system-ui;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    gap: 19.2rem;
+    align-items: center;
+}
+
+#timer {
+    font-size: 12.6rem;
+    font-weight: 500;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+
+#controls button {
+    font-size: 4.8rem;
+    color: var(--primary-color);
+
+    display: flex;
+    gap: 4rem;
+    justify-content: space-around;
+}
+
+#climate {
+    width: 30.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+}
+
+#climate button {
+    background: var(--bg-button);
+    border-radius: 2.4rem;
+    width: 13.8rem;
+    height: 15.2rem;
+}
+
+.btn-selected {
+    background-color: var(--bg-button-accent) !important;
+}
+
+
+.material-symbols-outlined {
+    font-size: 5.2rem !important;
+    color: var(--primary-color);
+}
+
+.color-white {
+    color: var(--white-color-base);
+}
+
+/*controls*/
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+    display: none !important;
+}
